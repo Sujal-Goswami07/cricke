@@ -1,0 +1,105 @@
+export default function CricHeroScoreTemplate() {
+  return (
+    <div className="min-h-screen bg-zinc-900 flex items-center justify-center p-6">
+      <div className="w-[900px] rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-950 via-zinc-900 to-black text-white border border-zinc-700">
+        {/* Header */}
+        <div className="flex items-center justify-between px-8 py-5 bg-white/5 border-b border-zinc-700">
+          <div>
+            <h1 className="text-3xl font-bold tracking-wide">CRIC HERO</h1>
+            <p className="text-zinc-400 text-sm">Editable Match Score Graphic</p>
+          </div>
+
+          <div className="bg-blue-600 px-5 py-2 rounded-2xl text-lg font-semibold shadow-lg">
+            FINAL SCORE
+          </div>
+        </div>
+
+        {/* Main Content */}
+        <div className="grid grid-cols-2 gap-6 p-8">
+          {/* Left Side */}
+          <div className="space-y-6">
+            <div className="bg-white/5 rounded-3xl p-6 border border-zinc-700">
+              <p className="text-zinc-400 uppercase tracking-wider text-sm mb-2">
+                Team Name
+              </p>
+              <input
+                defaultValue="Delhi Warriors"
+                className="w-full bg-zinc-800 border border-zinc-700 rounded-xl px-4 py-3 text-3xl font-bold outline-none"
+              />
+            </div>
+
+            <div className="bg-white/5 rounded-3xl p-6 border border-zinc-700">
+              <p className="text-zinc-400 uppercase tracking-wider text-sm mb-2">
+                Score
+              </p>
+              <input
+                defaultValue="186/4"
+                className="w-full bg-zinc-800 border border-zinc-700 rounded-xl px-4 py-4 text-6xl font-extrabold outline-none text-center"
+              />
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-white/5 rounded-3xl p-5 border border-zinc-700">
+                <p className="text-zinc-400 text-sm mb-2">Overs</p>
+                <input
+                  defaultValue="20.0"
+                  className="w-full bg-zinc-800 border border-zinc-700 rounded-xl px-4 py-3 text-2xl font-bold outline-none"
+                />
+              </div>
+
+              <div className="bg-white/5 rounded-3xl p-5 border border-zinc-700">
+                <p className="text-zinc-400 text-sm mb-2">Result</p>
+                <input
+                  defaultValue="Won by 22 Runs"
+                  className="w-full bg-zinc-800 border border-zinc-700 rounded-xl px-4 py-3 text-lg font-semibold outline-none"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Right Side */}
+          <div className="space-y-6">
+            <div className="bg-white/5 rounded-3xl p-6 border border-zinc-700 flex flex-col items-center justify-center h-[280px]">
+              <div className="w-40 h-40 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-6xl font-black shadow-2xl">
+                P
+              </div>
+
+              <input
+                defaultValue="Player Name"
+                className="mt-5 bg-zinc-800 border border-zinc-700 rounded-xl px-4 py-3 text-2xl font-bold outline-none text-center"
+              />
+
+              <input
+                defaultValue="78 (42)"
+                className="mt-3 bg-zinc-800 border border-zinc-700 rounded-xl px-4 py-2 text-xl font-semibold outline-none text-center"
+              />
+            </div>
+
+            <div className="bg-white/5 rounded-3xl p-6 border border-zinc-700">
+              <p className="text-zinc-400 uppercase tracking-wider text-sm mb-4">
+                Match Details
+              </p>
+
+              <textarea
+                defaultValue="Man of the Match: Player Name\nTop Bowler: 3/24\nVenue: Arun Jaitley Stadium"
+                className="w-full h-36 bg-zinc-800 border border-zinc-700 rounded-2xl p-4 outline-none resize-none text-lg"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="px-8 py-5 border-t border-zinc-700 bg-white/5 flex items-center justify-between">
+          <input
+            defaultValue="@yourcricketpage"
+            className="bg-zinc-800 border border-zinc-700 rounded-xl px-4 py-2 outline-none font-medium"
+          />
+
+          <p className="text-zinc-400 text-sm">
+            Fully Editable CricHero Style Graphic Template
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
